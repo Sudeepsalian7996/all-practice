@@ -10,7 +10,7 @@ app1.use(bodyparser.urlencoded())//get the detail from input
 
 app1.use("/admintwo",admin)
 
-app1.use(shop)
+app1.use("/shop",shop)
 
 app1.use((req,res,next)=>{
     res.send("<h1>Page is not found<h1>")

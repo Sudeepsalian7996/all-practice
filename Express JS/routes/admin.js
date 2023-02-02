@@ -10,7 +10,7 @@ route.get("/add-product",(req,res,next)=>{
 })
 route.post("/add-product",(req,res,next)=>{
     console.log(req.body)//get the detail from input
-   res.redirect("/")
+   res.redirect("/shop/")
 })
 
 module.exports=route
